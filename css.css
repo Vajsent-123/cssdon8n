@@ -1,0 +1,18 @@
+/* Custom CSS to replace chat trigger button with a GIF */
+.chat-window-wrapper .chat-window-toggle {
+  background: url('http://ahtest.dfirma.pl/wp-content/uploads/2024/11/ezgif.com-animated-gif-maker.gif') no-repeat center center; /* Replace with the path to your GIF */
+  background-size: cover; /* Ensure the GIF covers the entire button */
+  width: var(--chat--toggle--width, var(--chat--toggle--size)); /* Maintain the button's width */
+  height: var(--chat--toggle--height, var(--chat--toggle--size)); /* Maintain the button's height */
+  border-radius: var(--chat--toggle--border-radius, 50%); /* Maintain the button's border-radius */
+  transition: none; /* Remove any transition effects if needed */
+}
+
+/* Optional: Remove hover and active effects */
+.chat-window-wrapper .chat-window-toggle:hover,
+.chat-window-wrapper .chat-window-toggle:focus,
+.chat-window-wrapper .chat-window-toggle:active {
+  transform: none; /* Remove scaling effects */
+  background: url('http://ahtest.dfirma.pl/wp-content/uploads/2024/11/ezgif.com-animated-gif-maker.gif') no-repeat center center; /* Ensure the GIF remains the same */
+  background-size: cover;
+}
